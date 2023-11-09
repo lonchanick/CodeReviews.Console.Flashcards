@@ -6,7 +6,7 @@ public static class SessionOperations
     {
         Console.Clear();
         Console.WriteLine("Pick up an Stack to Start a new Study Session (Trype ! to exit)");
-        List<int> i = StackOperations.GetStackIdList(StackOperations.showStacks());
+        List<int> i = StackOperations.GetStackIdList(StackOperations.ShowStacks());
         int stackId = ToolBox.GetIntInput("Stack Id");
         while (!(i.IndexOf(stackId) >= 0))
         {

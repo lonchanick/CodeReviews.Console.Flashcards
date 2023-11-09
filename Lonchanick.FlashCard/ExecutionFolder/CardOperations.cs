@@ -14,7 +14,7 @@ public static class CardOperations
     public static void NewCard()
     {
         Console.Clear();
-        List<int> i = StackOperations.GetStackIdList(StackOperations.showStacks());
+        List<int> i = StackOperations.GetStackIdList(StackOperations.ShowStacks());
         Console.WriteLine("Pick any Stack (Id) From the list");
         int stackId = ToolBox.GetIntInput("Deck Id");
 
@@ -39,7 +39,7 @@ public static class CardOperations
     {
         Console.Clear();
 
-        List<int> i = StackOperations.GetStackIdList(StackOperations.showStacks());
+        List<int> i = StackOperations.GetStackIdList(StackOperations.ShowStacks());
         Console.WriteLine("Pick any Stack (Id) From the list");
         int id = ToolBox.GetIntInput("Stack Id");
         while (!(i.IndexOf(id) >= 0))
@@ -68,7 +68,7 @@ public static class CardOperations
     public static void UpdateCard()
     {
         Console.Clear();
-        List<int> i = StackOperations.GetStackIdList(StackOperations.showStacks());
+        List<int> i = StackOperations.GetStackIdList(StackOperations.ShowStacks());
         Console.WriteLine("Pick any Stack (Id) From the list");
         int id = ToolBox.GetIntInput("Stack Id");
 
